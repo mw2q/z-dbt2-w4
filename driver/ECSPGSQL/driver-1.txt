@@ -1,0 +1,89 @@
+connecting to client at 'localhost'
+connecting to client port at '30000'
+
+database table cardinalities:
+warehouses = 4
+districts = 10
+customers = 3000
+items = 100000
+orders = 3000
+stock = 100000
+new-orders = 900
+
+transaction mix:
+new-order mix 0.45
+payment mix 0.43
+order-status mix 0.04
+delivery mix 0.04
+stock-level mix 0.04
+
+transaction thresholds:
+new-order threshold 0.45
+payment threshold 0.88
+order-status threshold 0.92
+delivery threshold 0.96
+stock-level threshold 1.00
+
+delivery keying time 0 s
+new_order keying time 0 s
+order-status keying time 0 s
+payment keying time 0 s
+stock-level keying time 0 s
+
+delivery thinking time 0 ms
+new_order thinking time 0 ms
+order-status thinking time 0 ms
+payment thinking time 0 ms
+stock-level thinking time 0 ms
+
+w_id range 1 to 4
+
+10 terminals per warehouse
+
+600 second steady state duration
+
+driver is starting to ramp up at time 1430499735
+driver will ramp up in  3 seconds
+will stop test at time 1430500338
+seed for 22621:fd692910 : 2821589767
+seed for 22621:fd3f4910 : 2826630249
+seed for 22621:fd3d4910 : 2826533891
+seed for 22621:fd3b4910 : 2826027947
+seed for 22621:fd394910 : 2825934273
+seed for 22621:fd374910 : 2826491779
+seed for 22621:fd354910 : 2826657443
+seed for 22621:fd334910 : 2825970557
+seed for 22621:fd314910 : 2826136646
+seed for 22621:fd2f4910 : 2825896201
+seed for 22621:fd2d4910 : 2825537258
+seed for 22621:fd2b4910 : 2825792442
+seed for 22621:fd294910 : 2825739363
+seed for 22621:fd274910 : 2825725000
+seed for 22621:fd254910 : 2825750243
+seed for 22621:fd234910 : 2825654629
+seed for 22621:fd214910 : 2825684590
+seed for 22621:fd1f4910 : 2824653109
+seed for 22621:fd1d4910 : 2824645897
+seed for 22621:fd1b4910 : 2824541153
+seed for 22621:fd194910 : 2824843327
+seed for 22621:fd174910 : 2823961189
+seed for 22621:fd154910 : 2824768139
+seed for 22621:fd134910 : 2824406737
+seed for 22621:fd114910 : 2824439257
+seed for 22621:fd0f4910 : 2822774648
+seed for 22621:fd0d4910 : 2822806549
+seed for 22621:fd0b4910 : 2823291299
+seed for 22621:fd094910 : 2823336907
+seed for 22621:fd074910 : 2823228616
+seed for 22621:fd054910 : 2823003750
+seed for 22621:fd034910 : 2823166814
+seed for 22621:fd014910 : 2823472998
+seed for 22621:fcff4910 : 2847243569
+seed for 22621:fcfd4910 : 2847263773
+seed for 22621:fcfb4910 : 2847169291
+seed for 22621:fcf94910 : 2847156811
+seed for 22621:fcf74910 : 2847244881
+seed for 22621:fcf54910 : 2847196291
+seed for 22621:fcf34910 : 2847100067
+terminals started...
+driver is exiting normally

@@ -1,0 +1,20 @@
+LOG:  database system was shut down at 2015-05-01 18:02:01 BST
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  deadlock detected
+DETAIL:  Process 22579 waits for ShareLock on transaction 2644849; blocked by process 22711.
+	Process 22711 waits for ShareLock on transaction 2644848; blocked by process 22579.
+	Process 22579: FETCH ALL IN mycursor
+	Process 22711: FETCH ALL IN mycursor
+HINT:  See server log for query details.
+CONTEXT:  while updating tuple (4255,22) in relation "stock"
+	SQL statement "UPDATE stock
+	SET s_quantity = s_quantity - $1
+	WHERE s_i_id = $2
+	  AND s_w_id = $3"
+STATEMENT:  FETCH ALL IN mycursor
+LOG:  received smart shutdown request
+FATAL:  terminating autovacuum process due to administrator command
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
